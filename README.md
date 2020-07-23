@@ -2,13 +2,13 @@
 ## 简介
 ###Honey-Response:一个适用于JavaWeb应用,提供统一Rest响应以及优化异常与断言书写的基础组件。其定位是一个开箱即用、易用、简洁、代码侵入性低、支持自定义的企业级基础组件。
 ## 特点
-####[1]Honey-Response会基于springboot starter原理 自动装配，所以如果你觉得我默认封装的配置不符合你实际业务场景，你可以方便自定义自己的配置来继续使用；  
-####[2]Honey-response可以让你自定义异常变得相当方便，就像定义一个枚举常量一样。他底层模仿了Assert，可以让你的异常和断言结合同时使用。一行代码解决断言并抛出自定义异常，并且拥有良好的代码语义性；  
-####[3]Honey-Response支持多环境适配返回Rest响应数据，无论你使用常规springboot的profiles或者适应携程的Apollo都可以完美支持  
-####[4]Honey-Response提供了国际化消息，你的系统想要实现国际化消息，无需任何配置即可实现。当然你得提供国际化消息文件；  
-####[5]Honey-Response可以让你的controller层变得相当简洁。  
-####[6]Honey-Response提供了@HoneyConditionalOnProperty注解，用法与springboot的@ConditionalOnProperty一致。他可以解决当你使用Apollo并将系统配置托管于其内置的Eureka时，而你又想使用@ConditionalOnProperty进行条件装配bean时，spring提供的这个注解在collectProperties时无法收集到你目前系统的配置文件(因为你已经将配置托管于apollo)而导致注解里name的属性key无法解析成功而失效  
-####因此你可以考虑使用@HoneyConditionalOnProperty注解。
+###[1]Honey-Response会基于springboot starter原理 自动装配，所以如果你觉得我默认封装的配置不符合你实际业务场景，你可以方便自定义自己的配置来继续使用；  
+###[2]Honey-response可以让你自定义异常变得相当方便，就像定义一个枚举常量一样。他底层模仿了Assert，可以让你的异常和断言结合同时使用。一行代码解决断言并抛出自定义异常，并且拥有良好的代码语义性；  
+###[3]Honey-Response支持多环境适配返回Rest响应数据，无论你使用常规springboot的profiles或者适应携程的Apollo都可以完美支持  
+###[4]Honey-Response提供了国际化消息，你的系统想要实现国际化消息，无需任何配置即可实现。当然你得提供国际化消息文件；  
+###[5]Honey-Response可以让你的controller层变得相当简洁。  
+###[6]Honey-Response提供了@HoneyConditionalOnProperty注解，用法与springboot的@ConditionalOnProperty一致。他可以解决当你使用Apollo并将系统配置托管于其内置的Eureka时，而你又想使用@ConditionalOnProperty进行条件装配bean时，spring提供的这个注解在collectProperties时无法收集到你目前系统的配置文件(因为你已经将配置托管于apollo)而导致注解里name的属性key无法解析成功而失效  
+因此你可以考虑使用@HoneyConditionalOnProperty注解。
 ## 如何使用
 ### [1]引入依赖
 ```java  
